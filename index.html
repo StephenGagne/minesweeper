@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="./css/min/main.css">
+    <link rel="icon" href="./img/mine.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/mine.svg" alt="mine logo">
+        </div>
+        <h1 class="logline">Minesweeper</h1>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="button" id="sb-reset">Reset Game</div>
+            <div class="levels">
+                <div class="button" id="sb-easy">Beginner</div>
+                <div class="button" id="sb-medium">Intermediate</div>
+                <div class="button" id="sb-hard">Expert</div>
+                <div class="button" id="sb-random">Random</div>
+            </div>
+        </div>
+        <div class="gameContainer" id="gameContainer">
+            <div class="icons" id="icons">
+                <div class="toggle" id="toggle">
+                    <div class="flag">
+                        <img src="./img/flag.svg" alt="flag">
+                    </div>
+                    <div class="cursor toggled">
+                        <img src="./img/cursor.svg" alt="cursor">
+                    </div>
+                </div>
+                <div class="smile" id="smile">
+                    <img id="face" src="./img/neutral-face.svg" alt="smiling face">
+                </div>
+                <div class="counter">
+                    <div class="icon">
+                        <img src="./img/mine.svg" alt="mine">
+                    </div>
+                    <div class="window" id="counter">10</div>
+                </div>
+            </div>
+            <div class="game" id="game">
+                <!-- The cells go in here -->
+            </div>
+            <div class="instructions" id="instructions">
+                <h2>Instructions</h2>
+                <p>You goal is to identify and flag all of the mines hidden in the game board.</p>
+                <p>To use a flag, click on the <img src='./img/flag.svg'> toggle
+                    button.</p>
+                <p>You can see how many mines are left in the <img src="./img/mine.svg"> window.</p>
+            </div>
+            <div class="menu hidden" id="menu">
+                <h2>New Game?</h2>
+                <div class="button" id="easy">Beginner</div>
+                <div class="button" id="medium">Intermediate</div>
+                <div class="button" id="hard">Expert</div>
+            </div>
+
+            <div class="mobileControls">
+                <div class="button" id="menuBtn">New Game</div>
+                <div class="button" id="reset">Reset</div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>Minesweeper by Stephen Gagné - 2018</p>
+    </footer>
+    <script src="./scripts/minesweeper.js"></script>
+</body>
+
+</html>
